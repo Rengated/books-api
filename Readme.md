@@ -32,6 +32,7 @@
 - `tsconfig.json`: файл настроек TypeScript.
 
 ## Для старта проекта 
+    создаем .env
     docker compose up -d
     docker compose exec -it backend bash  
     npm run seed
