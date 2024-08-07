@@ -1,0 +1,17 @@
+{ 
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "outDir": "./dist",        // Папка для скомпилированных файлов
+    "rootDir": "./src",        // Корневая директория исходных файлов
+    "strict": true,       
+    "esModuleInterop": true,   // Разрешает использование модулей ES6
+    "resolveJsonModule": true, // Позволяет импортировать модули JSON
+    "skipLibCheck": true,      // Пропускает проверку типов в объявлениях библиотек
+    "forceConsistentCasingInFileNames": true
+    
+  },
+  "include": ["src/**/*"],     
+  "exclude": ["node_modules"]  // Исключает папку node_modules из компиляции
+}
