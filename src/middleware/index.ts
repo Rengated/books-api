@@ -30,10 +30,10 @@ export const adminMiddleware = async (req: Request, res: Response, next: NextFun
   try {
     const user = req.user;
     if (user!.role != "ADMIN") {
-      return res.status(403).send({ message: "Your are now allowed" });
+      return res.status(403).send({ message: "Your are not allowed" });
     }
     next();
   } catch (error) {
-    return res.status(403).send({ message: "Your are now allowed" });
+    return res.status(403).send({ message: "Your are not allowed" });
   }
 };
